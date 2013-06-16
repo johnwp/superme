@@ -16,6 +16,10 @@ Ext.define('SuperMe.view.Personas', {
                 { persona: 'Frugalistic' },
                 { persona: 'Social Butterfly' },
                 { persona: 'Latte & Laptop' },
+                { persona: 'Other' },
+                { persona: 'Frugalistic' },
+                { persona: 'Social Butterfly' },
+                { persona: 'Latte & Laptop' },
                 { persona: 'Other' }
             ]
         }]

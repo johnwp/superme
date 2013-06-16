@@ -15,7 +15,6 @@ Ext.define('SuperMe.controller.Registration', {
             personaField: 'registration textfield[name="persona"]'
         }
     },
-
     onTapPersonaBtn: function() {
         this.getPersonaList().show();
     },

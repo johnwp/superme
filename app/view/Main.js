@@ -11,7 +11,8 @@ Ext.define('SuperMe.view.Main', {
         'Ext.dataview.List',
         'SuperMe.view.Registration',
         'SuperMe.view.Login',
-        'SuperMe.view.Personas'
+        'SuperMe.view.Personas',
+        'SuperMe.view.Feed'
     ],
     config: {
         fullscreen: true,
@@ -28,6 +29,9 @@ Ext.define('SuperMe.view.Main', {
         }, {
             title: 'Personas',
             xtype: 'personas'
+        }, {
+            title: 'Feed',
+            xtype: 'feed'
         }]
     }
 });

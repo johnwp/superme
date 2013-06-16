@@ -32,7 +32,8 @@ Ext.application({
     ],
 
     controllers: [
-        'Registration'
+        'Registration',
+        'Feed'
     ],
 
     icon: {

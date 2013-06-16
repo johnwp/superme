@@ -13,23 +13,28 @@ Ext.define('SuperMe.view.Registration', {
             items: [{
                 xtype: 'textfield',
                 name: 'first_name',
-                label: 'First name:'
+                label: 'First name:',
+                value: 'Nina'
             }, {
                 xtype: 'textfield',
                 name: 'last_name',
-                label: 'Last name:'
+                label: 'Last name:',
+                value: 'Furukawa'
             }, {
                 xtype: 'textfield',
                 name: 'email',
-                label: 'Email Address:'
+                label: 'Email Address:',
+                value: 'mfurukawa@gmail.com'
             }, {
                 xtype: 'textfield',
                 name: 'zip',
-                label: 'Zip Code:'
+                label: 'Zip Code:',
+                value: '90405'
             }, {
                 xtype: 'textfield',
                 name: 'birthdate',
-                label: 'Child Due/Birth Date:'
+                label: 'Child Due/Birth Date:',
+                value: '10/19/2013'
             }, {
                 xtype: 'datepicker',
                 name: 'birthdatePicker',

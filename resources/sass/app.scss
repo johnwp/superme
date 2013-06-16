@@ -4,6 +4,13 @@
 @import 'sencha-touch/default';
 @import 'sencha-touch/default/all';
 
+$turquoiseLight: #DAFAF5;
+$turquoiseMedium: #C8F7F0;
+$turquoiseDark: #90EFE1;
+
+$purpleLight: #BEA2E1;
+$purpleDark: #951DC3;
+
 .x-layout-card-item {
   background-color: white;
 }
@@ -20,6 +27,41 @@
 
 div.x-button {
   background-color: purple;
+}
+
+.post {
+  background-color: $turquoiseLight;
+  .msg-ctr {
+    padding: 5px;
+    .name {
+      color: $purpleDark;
+      font-weight: bold;
+    }
+    .time-ago {
+      font-size: 9px;
+      color: grey;
+      line-height: 9px;
+    }
+    .message {
+      padding: 7px 0 2px 0;
+    }
+  }
+  .control-bar {
+    background-color: lighten($turquoiseLight, 3%);
+    padding: 5px;
+    span {
+      font-size: 12px;
+      padding-right: 10px;
+      color: $purpleDark;
+      font-weight: bold;
+    }
+    .right-ctrl-ctr {
+      float: right;
+      img {
+        height: 20px;
+      }
+    }
+  }
 }
 
 // Custom code goes here..
