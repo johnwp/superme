@@ -29,36 +29,44 @@ div.x-button {
   background-color: purple;
 }
 
-.post {
-  background-color: $turquoiseLight;
-  .msg-ctr {
-    padding: 5px;
-    .name {
-      color: $purpleDark;
-      font-weight: bold;
-    }
-    .time-ago {
-      font-size: 9px;
-      color: grey;
-      line-height: 9px;
-    }
-    .message {
-      padding: 7px 0 2px 0;
-    }
-  }
-  .control-bar {
-    background-color: lighten($turquoiseLight, 3%);
-    padding: 5px;
-    span {
-      font-size: 12px;
-      padding-right: 10px;
-      color: $purpleDark;
-      font-weight: bold;
-    }
-    .right-ctrl-ctr {
-      float: right;
+.post-wrapper {
+  margin-bottom: 20px;
+  .post {
+    background-color: $turquoiseLight;
+    .msg-ctr {
+      padding: 5px;
       img {
-        height: 20px;
+        width: 40px;
+        margin: 5px;
+        float: left;
+      }
+      .name {
+        color: $purpleDark;
+        font-weight: bold;
+      }
+      .time-ago {
+        font-size: 9px;
+        color: grey;
+        line-height: 9px;
+      }
+      .message {
+        padding: 7px 0 2px 0;
+      }
+    }
+    .control-bar {
+      background-color: lighten($turquoiseLight, 3%);
+      padding: 5px;
+      span {
+        font-size: 12px;
+        padding-right: 10px;
+        color: $purpleDark;
+        font-weight: bold;
+      }
+      .right-ctrl-ctr {
+        float: right;
+        img {
+          height: 20px;
+        }
       }
     }
   }
@@ -74,6 +82,10 @@ div.x-button {
   }
 }
 
+.wire-1 {
+  background-image: url('/resources/wires/1.png');
+  background-size: 100%;
+}
 // Custom code goes here..
 
 // Examples of using the icon mixin:

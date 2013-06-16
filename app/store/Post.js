@@ -6,7 +6,7 @@ Ext.define("SuperMe.store.Post", {
     model: "SuperMe.model.Post",
     proxy: {
         type: "ajax",
-        url : "/service/post",
+        url : "http://supersails.herokuapp.com/post?sort=createdAt",
         noCache: false,
         enablePagingParams: false,
         reader: {

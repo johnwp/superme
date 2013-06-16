@@ -8,7 +8,7 @@ Ext.define("SuperMe.store.User", {
         type: "ajax",
         noCache: false,
         enablePagingParams: false,
-        url : "/service/user",
+        url : "http://supersails.herokuapp.com/user",
         reader: {
             type: "json"
 //            rootProperty: "users"

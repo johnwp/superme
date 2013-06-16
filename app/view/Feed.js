@@ -8,6 +8,9 @@ Ext.define('SuperMe.view.Feed', {
             xtype: 'container',
             name: 'feed',
             cls: 'post'
+        }, {
+            xtype: 'button',
+            text: 'post'
         }]
     }
 });

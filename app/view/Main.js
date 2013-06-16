@@ -9,10 +9,13 @@ Ext.define('SuperMe.view.Main', {
         'Ext.form.FieldSet',
         'Ext.field.Email',
         'Ext.dataview.List',
+        'Ext.carousel.Carousel',
         'SuperMe.view.Registration',
         'SuperMe.view.Login',
         'SuperMe.view.Personas',
-        'SuperMe.view.Feed'
+        'SuperMe.view.Feed',
+        'SuperMe.view.Post',
+        'SuperMe.view.Wires'
     ],
     config: {
         fullscreen: true,
@@ -32,6 +35,9 @@ Ext.define('SuperMe.view.Main', {
         }, {
             title: 'Feed',
             xtype: 'feed'
+        }, {
+            title: 'Post',
+            xtype: 'post'
         }]
     }
 });

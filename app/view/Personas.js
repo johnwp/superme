@@ -7,28 +7,28 @@ Ext.define('SuperMe.view.Personas', {
                  '{description}',
         data: [{
             persona: 'Belle Esprit',
-            description: 'Intellectual, reserved, academic'
+            description: 'Intellectual, clever, academic'
         }, {
             persona: 'Urban Sophisticate',
-            description: 'Ambitious, stylish, connoisseur'
+            description: 'Ambitious, stylish, discerning'
+        }, {
+            persona: 'Earth Mama',
+            description: ' Attentive, confident, child-focused'
         }, {
             persona: 'Adventure Seeker',
-            description: 'Eco- & health-conscious, progressive'
-        }, {
-            persona: 'Artsy-Craftsy Hipster',
-            description: 'Creative, upbeat, musical'
-        }, {
-            persona: 'Wine & Whine',
-            description: 'Chatty, relaxed, dependable'
-        }, {
-            persona: 'Girl’s Gone Child',
-            description: 'Extroverted, enthusiastic, energetic'
+            description: 'Active, eco- & health-conscious'
         }, {
             persona: 'Domestic Diva',
             description: 'Family-focused, organized, practical'
         }, {
-            persona: 'Attachment Confidante',
-            description: 'Attentive, self-assured, outspoken'
+            persona: 'Artsy-Craftsy Hipster',
+            description: 'Creative, upbeat, imaginative'
+        }, {
+            persona: 'Wine & Whine',
+            description: 'Chatty, relaxed, dependable, imperfect'
+        }, {
+            persona: "Girl’s Gone Child",
+            description: 'Extroverted, enthusiastic, energetic'
         }]
 //        items: [{
 //            xtype: 'button',
