@@ -64,6 +64,16 @@ div.x-button {
   }
 }
 
+.persona-list {
+  .x-list-disclosure .x-innerhtml {
+    font-size: 12px;
+    .persona-type {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
 // Custom code goes here..
 
 // Examples of using the icon mixin:

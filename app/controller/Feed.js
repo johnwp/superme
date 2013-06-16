@@ -11,15 +11,20 @@ Ext.define('SuperMe.controller.Feed', {
             feed: 'feed container[name="feed"]'
         }
     },
-
+    models: [
+        'Post',
+        'User'
+    ],
+    stores: [
+        'Post',
+        'User'
+    ],
     onAfterRender: function() {
-        console.log('tryna load feed');
-
         var t = new Ext.Template(
-            '<div id="{id}" class="post {cls}">',
+            '<div id="" class="post">',
                 '<div class="msg-ctr">',
-                    '<div class="name">{name:trim}</div>',
-                    '<div class="time-ago">{timestamp}</div>',
+                    '<div class="name"></div>',
+                    '<div class="time-ago"></div>',
                     '<div class="message">{message}</div>',
                 '</div>',
                 '<div class="control-bar">',
@@ -38,13 +43,26 @@ Ext.define('SuperMe.controller.Feed', {
         );
         t.compile();
 
-        t.insertFirst(this.getFeed().getEl(), {
-            id: 1111,
-            cls: 'sos',
-            name: 'Jane Doe',
-            timestamp: this.timeDifference(1371361541465),
-            message: 'Help! I need a sitter. Anyone able to help?'
-        })
+//        console.log('store', this.getPostStore());
+//
+////        var recs = this.getPostStore().getData();
+//        console.log('recs', this.getPostStore().first());
+
+        this.getPostStore().load(function(records) {
+            var me = this;
+            Ext.Array.each(records, function(rec) {
+                console.log('rec', rec.getData());
+                t.insertFirst(me.getFeed().getEl(), rec.getData());
+            })
+        }, this);
+
+//        t.insertFirst(this.getFeed().getEl(), {
+//            id: 1111,
+//            cls: 'sos',
+//            name: 'Jane Doe',
+//            timestamp: this.timeDifference(1371361541465),
+//            message: 'Help! I need a sitter. Anyone able to help?'
+//        });
     },
     timeDifference: function(previous) {
         var msPerMinute = 60 * 1000;
