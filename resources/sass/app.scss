@@ -1,0 +1,28 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+.x-layout-card-item {
+  background-color: white;
+}
+
+.title-bar {
+  background: url('/resources/images/superme.png') no-repeat center;
+  background-color: white;
+  width: 100%;
+
+  &.x-docked-top {
+    border: none;
+  }
+}
+
+div.x-button {
+  background-color: purple;
+}
+
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
